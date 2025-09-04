@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link rel="icon" href="./images/games.png" type="image/png">
+</head>
+<body>
+    <div id="title">Tic Tac Toe</div>
+
+    <div id="player-info">
+        <div id="player-container">
+            <div class="player">
+                <label for="p1-name">
+                    Player 1 Name: <input name="p1-name" id="p1-name" type="text" placeholder="Sabrina" maxlength="9">
+                </label>
+                <label for="p1-mark">
+                    Player 1 Mark: <input name="p1-mark" id="p1-mark" type="text" placeholder="X" maxlength="9">
+                </label>
+            </div>
+            <div class="player">
+                <label for="p2-name">
+                    Player 2 Name: <input name="p2-name" id="p2-name" type="text" placeholder="Carpenter" min="1">
+                </label>
+                 <label for="p2-mark">
+                    Player 2 Mark: <input name="p2-mark" id="p2-mark" type="text" placeholder="O" min="1">
+                </label>
+            </div>
+        </div>
+
+        <button id="start-game" class="button">Start Game!</button>
+    </div>
+
+    <div id="game-buttons">
+        <button id="go-back" class="button">Go Back</button>
+        <button id="reset" class="button">Reset Current Game</button>
+        <button id="continue" class="button">Continue Game?</button>
+        <button id="reset-score" class="button">Reset Entire Game</button>
+    </div>
+
+    <div id="game-text">
+        <div id="number-of-games" class="less"></div>
+        <div id="current-player" class="less"></div>
+    </div>
+    <div id="main">
+         <div id="player-1">
+                <p id="player-1-score" class="highlighted"></p>
+                <p id="player-1-symbol" class="less"></p>
+            </div>
+        <div id="gameboard-div">
+            <div id="line-1" class="line"></div>
+            <div id="line-2" class="line"></div>
+            <div id="line-3" class="line"></div>
+            <div id="line-4" class="line"></div>
+            <div id="line-5" class="line"></div>
+            <div id="line-6" class="line"></div>
+            <div id="line-7" class="line"></div>
+            <div id="line-8" class="line"></div>
+        </div>
+         <div id="player-2">
+                <p id="player-2-score" class="highlighted"></p>
+                <p id="player-2-symbol" class="less"></p>
+            </div>
+    </div>
+    <button id="theme"></button>
+</body>
+</html>
