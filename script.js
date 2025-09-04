@@ -328,7 +328,7 @@ const gameLogic = (function () {
                         winnerFlag = true;
                         gameboard.setWinner(currentPlayer.name);
                         currentPlayer.increaseScore();
-                        setLineId(i);
+                        //setLineId(i);
                         if (currentPlayer.name == p1Name.value) {
                             gameboard.scoreBoard(currentPlayer.getScore(), null);
                         }
@@ -381,4 +381,5 @@ backButton.addEventListener("click", (event) => goBack(event));
 resetButton.addEventListener("click", reset);
 resetScoreButton.addEventListener("click", resetScore);
 continueButton.addEventListener("click", continueGame);
+
 themeButton.addEventListener("click", toggleTheme);
