@@ -20,7 +20,7 @@
 }
 
 html {
-    font-size: 40px;
+    font-size: 32px;
 }
 
 * {
@@ -186,8 +186,8 @@ input:hover {
 }
 
 .board-button {
-    height: 200px;
-    width: 200px;
+    height: 130px;
+    width: 130px;
     font-family: var(--primary-font);
     font-size: 2rem;
     background-color: transparent;
